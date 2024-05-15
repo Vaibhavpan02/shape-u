@@ -48,7 +48,7 @@ var navigation_1 = require("next/navigation");
 var lucide_react_1 = require("lucide-react");
 var get_dashboard_courses_1 = require("@/actions/get-dashboard-courses");
 var courses_list_1 = require("@/components/courses-list");
-var info_card_1 = require("./_components/info-card");
+var info_card_1 = require("../_components/info-card");
 function Dashboard() {
     return __awaiter(this, void 0, void 0, function () {
         var userId, _a, completedCourses, coursesInProgress;
