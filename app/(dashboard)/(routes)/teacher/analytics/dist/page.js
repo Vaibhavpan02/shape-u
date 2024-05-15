@@ -41,6 +41,7 @@ var navigation_1 = require("next/navigation");
 var get_analytics_1 = require("@/actions/get-analytics");
 var user_data_1 = require("@/actions/user-data");
 var data_card_1 = require("./_components/data-card");
+// import { Chart } from "./_components/chart";
 var UserCourseCard_1 = require("./_components/UserCourseCard");
 var AnalyticsPage = function () { return __awaiter(void 0, void 0, void 0, function () {
     var userId, _a, data, totalRevenue, totalSales, userInfo, publishedCourses;
@@ -69,40 +70,3 @@ var AnalyticsPage = function () { return __awaiter(void 0, void 0, void 0, funct
     });
 }); };
 exports["default"] = AnalyticsPage;
-// import { auth } from "@clerk/nextjs";
-// import { redirect } from "next/navigation";
-// import { getAnalytics } from "@/actions/get-analytics";
-// import { getUserInfo, getUserPublishedCourses } from "@/actions/user-data";
-// import { DataCard } from "./_components/data-card";
-// import { Chart } from "./_components/chart";
-// import UserCourseCard from "./_components/UserCourseCard";
-// const AnalyticsPage = async () => {
-//   const { userId } = auth();
-//   if (!userId) {
-//     return redirect("/");
-//   }
-//   const { data, totalRevenue, totalSales } = await getAnalytics(userId);
-//   const userInfo = await getUserInfo(userId);
-//   const publishedCourses = await getUserPublishedCourses(userId);
-//   return (
-//     <div className="p-6">
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-//         <DataCard
-//           label="Total Revenue"
-//           value={totalRevenue}
-//           shouldFormat
-//         />
-//         <DataCard
-//           label="Total Sales"
-//           value={totalSales}
-//         />
-//         <UserCourseCard
-//           userName={userInfo.name}
-//           courses={publishedCourses}
-//         />
-//       </div>
-//       <Chart data={data} />
-//     </div>
-//   );
-// }
-// export default AnalyticsPage;

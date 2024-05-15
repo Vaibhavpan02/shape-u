@@ -1,7 +1,4 @@
 "use strict";
-// import { auth } from "@clerk/nextjs"
-// import { redirect } from "next/navigation";
-// import { CheckCircle, Clock } from "lucide-react";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -46,39 +43,6 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 exports.__esModule = true;
-// import { getDashboardCourses } from "@/actions/get-dashboard-courses";
-// import { CoursesList } from "@/components/courses-list";
-// import { InfoCard } from "./_components/info-card";
-// export default async function Dashboard() {
-//   const { userId } = auth();
-//   if (!userId) {
-//     return redirect("/");
-//   }
-//   const {
-//     completedCourses,
-//     coursesInProgress
-//   } = await getDashboardCourses(userId);
-//   return (
-//     <div className="p-6 space-y-4">
-//       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-//        <InfoCard
-//           icon={Clock}
-//           label="In Progress"
-//           numberOfItems={coursesInProgress.length}
-//        />
-//        <InfoCard
-//           icon={CheckCircle}
-//           label="Completed"
-//           numberOfItems={completedCourses.length}
-//           variant="success"
-//        />
-//       </div>
-//       <CoursesList
-//         items={[...coursesInProgress, ...completedCourses]}
-//       />
-//     </div>
-//   )
-// }
 var nextjs_1 = require("@clerk/nextjs");
 var navigation_1 = require("next/navigation");
 var lucide_react_1 = require("lucide-react");
